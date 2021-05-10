@@ -27,7 +27,7 @@ async function waiter(obj, index = 0) {
   setTimeout(() => {
     console.log(obj[index])
     console.log('index: ', index)
-    share = document.getElementsByClassName('share-wrapper-container')
+    share = document.getElementsByClassName('party-info');
     // share[index].click();
     share[0].click();
     // if (index < obj.length - 1) {
