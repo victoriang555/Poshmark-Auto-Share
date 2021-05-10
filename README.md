@@ -1,17 +1,6 @@
-# Poshmark-Auto-Share
+# Poshmark-Auto-Share-To-Parties
 
-Got frustrated that all extensions charge up to hundreds of dollarrs a month for such a simple feature. So I've made my own!
-This type of software is very simple and should not be gate-kept with premium payments.
-
-p.s) Please dont mind the name, it was originally made for my significant other.
-
-
-
-Poshmark-Auto-Share
-
-Chrome extension for auto sharing in Poshmark
-
-
+Forked off a very useful Chrome extension. This does the same thing except instead of sharing to followers, it will share to any active party.
 
 #### Overview
 
@@ -46,7 +35,5 @@ currernt feature:
 -Shares to followers!
 
 <br>
-𝕀𝕗 𝕪𝕠𝕦 𝕝𝕚𝕜𝕖𝕕 𝕞𝕪 𝕡𝕣𝕠𝕛𝕖𝕔𝕥, 𝕝𝕖𝕒𝕧𝕖 𝕒 𝕤𝕥𝕒𝕣!!(please :))
-
-## Connect with me! [<img src="./linkedin.png">](https://www.linkedin.com/in/keon-w-kim/)
+## Connect with the original creator! [<img src="./linkedin.png">](https://www.linkedin.com/in/keon-w-kim/)
 <br>
