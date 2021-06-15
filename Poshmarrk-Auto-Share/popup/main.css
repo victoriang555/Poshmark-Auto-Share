@@ -1,5 +1,6 @@
 html, body {
-  width: 100px;
+    width: 100px;
+    backgroud-color: #4a4a4f;
 }
 
 .hidden {
@@ -10,6 +11,16 @@ html, body {
   margin: 3% auto;
   padding: 4px;
   text-align: center;
-  font-size: 1.5em;
+  font-size: 1em;
   cursor: pointer;
+  color: white;
+  border-radius: 0.2em;
+}
+
+#btn-share-to-party {
+    background-color: #0060df;
+}
+
+#btn-share-profile {
+    background-color: #ff9400;
 }

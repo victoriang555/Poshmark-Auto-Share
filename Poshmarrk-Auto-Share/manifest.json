@@ -7,5 +7,11 @@
     "browser_action": {
 	"default_title": "Poshmark Tools",
 	"default_popup": "popup/main.html"
-    }
+    },
+    "content_scripts": [
+	{
+	    "matches": ["*://*.poshmark.com/*"],
+	    "js": ["content-script.js"]
+	}
+    ]
 }
