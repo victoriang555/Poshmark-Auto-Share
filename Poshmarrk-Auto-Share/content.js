@@ -1,45 +1,28 @@
-// Array.from(document.getElementsByClassName('icon share-gray-large'))
-//   .forEach(async (x, xi) => {
-//     //x.click()
-//     await setTimeout(async function () {
-//       console.log('waited! index: ', xi)
-//     }, 1000)
-//   })
-
-
-function autoLoad() {
-  let interval = setInterval(() => {
-    if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
-      waiter(Array.from(document.getElementsByClassName('icon share-gray-large')))
-      clearInterval(interval)
-    } else {
-      window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' })
-    }
-  }, 4000);
+function shareCloset() {
+  console.log("Starting closet share...")
+  const elements = Array.from(document.getElementsByClassName('icon share-gray-large'));
+  if (elements.length == 0) {
+    alert("No closet items found.");
+  } else {
+    const max=8;
+    // alert(`Sharing ${max} items...`)
+    shareClosetItems(elements, 0, max);
+  }
 }
-autoLoad();
 
-
-
-async function waiter(obj, index = 0) {
-  let share;
-  obj[index].click()
+function shareClosetItems(elements, i, max) {
+  console.log(`Click share ${i}/${max}...`);
+  elements[i].click();
   setTimeout(() => {
-    console.log(obj[index])
-    console.log('index: ', index)
-    share = document.getElementsByClassName('party-info');
-    // share[index].click();
-    share[0].click();
-    // if (index < obj.length - 1) {
-    //   waiter(obj, index + 1)
-    // }
+    console.log(`Sharing ${i}/${max}...`);
+    document.getElementsByClassName('share-wrapper__share-title')[0].click();
   }, 200);
   setTimeout(() => {
-    if (index < obj.length - 1) {
-      waiter(obj, index + 1)
+    if (i < max) {
+      console.log(`Doing stuff...`);
+      shareClosetItems(elements, i+1, max);
     }
   }, 1000);
-  return
 }
 
-// waiter(Array.from(document.getElementsByClassName('icon share-gray-large')))
+shareCloset();
